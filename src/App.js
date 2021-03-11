@@ -1,9 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HomePage from "./pages/home/home";
+import Header from "./components/Header/Header_component";
+
 const App = () => {
   return (
-    <div>
-      <h1>Pagina de inicio</h1>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <main>
+        <Switch>
+          <Route path="/:page?" exact component={HomePage} />
+        </Switch>
+      </main>
+    </BrowserRouter>
   );
 };
 

@@ -1,0 +1,31 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  margin: 2rem;
+}
+
+.pagination {
+  text-align: center;
+  padding: 15px;
+  font-family: "Schoolbell", serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagination li {
+  display: inline;
+  text-decoration: none;
+}
+
+.page {
+  padding: 8px;
+  margin: 2px;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .pagination {
+    font-size: 50px;
+  }
+}

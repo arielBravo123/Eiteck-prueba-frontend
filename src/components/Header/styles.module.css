@@ -1,0 +1,39 @@
+.headerContainer {
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 1px #111;
+}
+
+.heading {
+  font-family: "Schoolbell", serif;
+  font-size: 100px;
+  line-height: 1;
+  color: #02b1c8;
+  margin: 20px 0 25px;
+  animation: textShadow 2s linear infinite alternate;
+}
+
+.heading span {
+  font-size: 50px;
+  vertical-align: middle;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+@keyframes textShadow {
+  from {
+    text-shadow: 0.02em 0.02em 0.02em #7ffa67, -0.02em -0.02em 0.02em #7ffa67,
+      0 0 0.2em #7ffa67;
+  }
+  to {
+    text-shadow: 0.02em 0.02em 0.02em #7ffa67, -0.02em -0.02em 0.02em #7ffa67,
+      0 0 0.02em #7ffa67;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
