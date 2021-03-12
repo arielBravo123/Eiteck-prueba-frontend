@@ -1,5 +1,3 @@
-# Foco
-
 # Eiteck-prueba-frontend
 
 Frontend para consumir API de Rick y Morty con React utilizando Redux como patrón para consumir los datos y manejar los estados dentro de la página.
