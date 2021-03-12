@@ -1,3 +1,6 @@
+/* 
+Reducer para los personajes donde se obtiene la acción 
+*/
 import {
   CHARACTER_DETAILS,
   CHARACTER_FETCH_PAGE,
@@ -6,7 +9,17 @@ import {
   CHARACTER_SEARCH_ERROR,
 } from "../constants/characters_constants";
 
+/* 
+Se maneja el estado general de los personajes en base a las diferentes acciones creadas 
+*/
 const reducer = (state = [], action) => {
+  /* 
+Entradas:
+state: estado: inicialmente vacio
+action: accion con el payload 
+Salidas:
+En base al tipo especificado en las acciones retorna los datos o errores dependiendo de la accion
+*/
   switch (action.type) {
     case CHARACTER_FETCH_PAGE:
       /*  action.payload = characters*/

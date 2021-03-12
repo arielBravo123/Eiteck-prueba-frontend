@@ -1,3 +1,6 @@
+/* 
+Se utiliza react-router-dom para el manejo de rutas
+*/
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/home/home";

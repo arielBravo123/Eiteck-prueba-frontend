@@ -1,6 +1,10 @@
 # Eiteck-prueba-frontend
 
-Frontend para consumir API de Rick y Morty con React utilizando Redux como patrón para consumir los datos y manejar los estados dentro de la página.
+Frontend para consumir API de Rick y Morty con React utilizando Hooks y Redux como patrón para consumir los datos y manejar los estados dentro de la página.
+
+### Documentación de la API
+
+- [Click Aquí para ver la documentación de la API](https://rickandmortyapi.com/)
 
 # ![Rick y Morty API](src/images/rick_and_morty.png)
 
@@ -17,13 +21,14 @@ Frontend para consumir API de Rick y Morty con React utilizando Redux como patr�
 
 - Node Js
 
-# Uso
+# Para usar localmente
 
 - Descargar la carpeta
 - Descomprimir
 - Ejecutar dentro de la carpeta
 
 ```sh
+$ npm install
 $ npm start
 ```
 
@@ -31,6 +36,8 @@ $ npm start
 
 - [React](https://es.reactjs.org/)
 - [React-Icons](https://react-icons.github.io/react-icons)
+- [Axios](https://github.com/axios/axios)
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start)
 
 #### Estilos
 
