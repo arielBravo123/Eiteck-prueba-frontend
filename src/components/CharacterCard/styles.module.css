@@ -25,7 +25,7 @@
   border-radius: 50%;
   border: 5px solid #272133;
   margin-top: 20px;
-  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+  box-shadow: 0 10px 50px #448c3f;
 }
 
 .draw__border {
@@ -65,7 +65,7 @@
 
 .draw__border:hover::before,
 .draw__border:hover::after {
-  border-color: #eb196e;
+  border-color: #fff765;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
@@ -92,10 +92,16 @@
   letter-spacing: 0.05rem;
   margin: 1em;
   width: 13rem;
+  text-decoration-line: none;
 }
 
 .btn:focus {
   outline: 2px dotted #55d7dc;
+}
+
+.btnText {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .text {

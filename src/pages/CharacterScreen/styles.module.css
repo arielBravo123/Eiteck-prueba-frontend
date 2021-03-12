@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+.container {
+  padding: 1rem 0.5rem;
+  color: #fff;
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+}
+.textDivider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.5rem;
+}
+
+.imageContainer {
+  text-align: center;
+}
+.image {
+  border: 5px solid #272133;
+  margin-top: 20px;
+  box-shadow: 0 10px 50px #66ba4f;
+  width: 60%;
+  border-radius: 20px;
+}
+
+.wrapper h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.wrapper h3 {
+  font-size: 24px;
+  color: #a9a9a9;
+}
+
+.image:hover {
+  filter: grayscale(60%);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding: 0px, 0px;
+}
+
+.text:hover {
+  color: #ffe593;
+}
+
+.dead {
+  color: red;
+  background: red;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.alive {
+  color: green;
+  background: green;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.unknown {
+  color: gray;
+  background: gray;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.centerbtn {
+  text-align: center;
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+
+.button {
+  color: #ffe593;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #fff;
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #fff;
+  border: 2px solid #ffe593;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    display: inline;
+    text-align: center;
+  }
+  .image {
+    width: 80%;
+  }
+  .centerbtn {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .textDivider {
+    display: inline;
+    text-align: center;
+  }
+}

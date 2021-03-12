@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import { FaRegCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const CharacterCard = ({ character }) => {
   return (
     <div className={styles.card}>
@@ -19,9 +20,12 @@ const CharacterCard = ({ character }) => {
         &nbsp; {character.status} - {character.species}
       </div>
 
-      <button className={`${styles.btn} ${styles.draw__border}`}>
-        Ver Detalles
-      </button>
+      <Link
+        to={`/character/${character.id}`}
+        className={`${styles.btn} ${styles.draw__border}`}
+      >
+        <span className={styles.btnText}>Ver Detalles</span>
+      </Link>
     </div>
   );
 };
