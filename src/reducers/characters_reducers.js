@@ -6,7 +6,7 @@ import {
   CHARACTER_SEARCH_ERROR,
 } from "../constants/characters_constants";
 
-export default (state = [], action) => {
+const reducer = (state = [], action) => {
   switch (action.type) {
     case CHARACTER_FETCH_PAGE:
       /*  action.payload = characters*/
@@ -23,3 +23,5 @@ export default (state = [], action) => {
       return state;
   }
 };
+
+export default reducer;

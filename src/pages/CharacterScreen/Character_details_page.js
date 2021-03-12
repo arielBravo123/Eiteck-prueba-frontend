@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { characterDetails } from "../../actions/characters_actions";
 import { FaRegCircle } from "react-icons/fa";
-import moment from "moment";
+
 const CharacterDetailsScreen = ({ match }) => {
   const dispatch = useDispatch();
   const characterId = match.params.id;
